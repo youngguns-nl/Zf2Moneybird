@@ -30,11 +30,11 @@ class ConnectorFactory implements FactoryInterface
     public function createService(ServiceLocatorInterface $serviceLocator)
     {
         $config = $serviceLocator->get('config');
-        $moneyBirdConfig = $config['moneybird'];
+        $moneybirdConfig = $config['moneybird'];
 
-        $transport = $this->createTransport($moneyBirdConfig['transport'], $moneyBirdConfig['transport_options']);
+        $transport = $this->createTransport($moneybirdConfig['transport'], $moneybirdConfig['transport_options']);
         $connector = new ApiConnector(
-            $moneyBirdConfig['clientname'], $transport, new XmlMapper()
+            $moneybirdConfig['clientname'], $transport, new XmlMapper()
         );
 
         return $connector;
