@@ -4,8 +4,8 @@
     "require": {
         "php": ">=5.3.3",
         "bluetools/moneybird-php-api": "2.*",
-        "zendframework/zend-modulemanager": "2.2.*",
-        "zendframework/zend-servicemanager": "2.2.*"
+        "zendframework/zend-modulemanager": "2.*",
+        "zendframework/zend-servicemanager": "2.*"
     },
     "license": "MIT",
     "authors": [
