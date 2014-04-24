@@ -13,5 +13,10 @@
             "name": "Jaap van Otterdijk",
             "email": "jaap@youngguns.nl"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-0": {
+            "Youngguns\\Zf2Moneybird": "src/"
+        }
+    }
 }
